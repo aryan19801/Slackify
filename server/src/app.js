@@ -30,3 +30,4 @@ try {
 }
 }
 startServer();
+export default app;
