@@ -10,6 +10,11 @@ app.use(express.json());
 app.use(clerkMiddleware());
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
+app.get("/", (req, res) => {
+  res.send("Hello World! 123");
+});
+
+
 
 const startServer = async () =>{
 try {
